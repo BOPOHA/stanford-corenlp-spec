@@ -17,7 +17,7 @@ License:	GPL
 URL:		https://stanfordnlp.github.io/CoreNLP/
 Source0:	https://nlp.stanford.edu/software/stanford-corenlp-full-%{pkg_release}.zip
 Source1:	%{name}.service
-Source2:	http://nlp.stanford.edu/software/%{model_name_en}
+Source2:	https://nlp.stanford.edu/software/%{model_name_en}
 
 #BuildRequires:	
 Requires:	java-1.8.0-openjdk
