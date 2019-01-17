@@ -1,7 +1,7 @@
 %global		debug_package	%{nil}
 
 %define		pkg_release	2018-10-05
-%define		pkg_minor	04
+%define		pkg_minor	05
 %define		pkg_release_num	%(echo %{pkg_release} | tr -d - )%{pkg_minor}
 
 %define		full_name	stanford-corenlp-full
