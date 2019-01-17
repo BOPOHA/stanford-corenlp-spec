@@ -19,7 +19,7 @@ Source0:	https://nlp.stanford.edu/software/stanford-corenlp-full-%{pkg_release}.
 Source1:	%{name}.service
 Source2:	https://nlp.stanford.edu/software/%{model_name_en}
 
-#BuildRequires:	
+BuildRequires: systemd
 Requires:	java-1.8.0-openjdk
 
 %description
