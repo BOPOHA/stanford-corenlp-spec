@@ -1,13 +1,11 @@
 [Unit]
 Description=Natural Language Processing (NLP) Toolkit
 After=network.target
-After=syslog.target
 
 [Service]
 Type=simple
 WorkingDirectory=/var/lib/corenlp
-SyslogIdentifier=corenlp
-ExecStart=/usr/bin/java -mx5g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+ExecStart=/usr/bin/java -mx5g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -preload "tokenize,ssplit,truecase" -port 9000 -timeout 15000
 Restart=on-failure
 User=nobody
 Group=nobody
